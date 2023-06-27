@@ -97,6 +97,7 @@ select {
     grid-template-columns: 1fr;
 }
 
+
 aside, main {
     margin-top: 3rem;
 }
@@ -106,7 +107,7 @@ main {
     color: var(--clr-bg);
 }
 
-/*================ style role list Aside*/
+/*================ style  Aside */
 .profile {
     position: relative;
     width: 70px;
@@ -148,9 +149,9 @@ main {
 }
 
 #menu {
-    display: flex;
     flex-direction: column;
     gap: 2rem;
+    display: none;
 }
 
 #menu a {
@@ -164,6 +165,12 @@ main {
 
 #menu a:hover {
     color: #f4f4f5;
+}
+
+#menu-mobile {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
 }
 
 
@@ -186,6 +193,10 @@ main {
 
 
 @media (min-width: 50em) {
+    #menu {
+        display: flex;
+    }
+
     .even-columns {
         grid-template-columns: 200px 1fr;
     }
