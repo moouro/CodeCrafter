@@ -1,228 +1,263 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Simple Dashboard</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
+  <head>
+    <!-- OTHER META TAGS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<div class="container">
-    <button type="button" id="menu-mobile">
-        <img src="./img/menu-mobile.svg" alt="Menu Mobile">
-    </button>
-    <div class="even-columns">
-        <aside>
+    <!-- WEBSITE TITLE -->
+    <title>Dashboard</title>
 
+    <!-- WEBSITE DESCRIPTION -->
+    <meta name="description" content="This is my cool website!" />
 
-            <header>
-                <div class="profile">
-                    <img src="img/profile.svg" alt="Image from profile">
-                    <span>4</span>
-                    <h2>Samantha</h2>
-                    <p>samantha@email.com</p>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/svg" href="assets/code.svg" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- *currently set to "Roboto". Feel free to change it to whatever you like* -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS STYLE LINK -->
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <!-- WEBSITE CONTENT GOES HERE -->
+
+    <div class="main-layout">
+      <aside>
+        <header>
+          <nav>
+            <div class="profile">
+              <img src="https://i.pravatar.cc/50?img=27" alt="profile Image" />
+
+              <div class="profile-info">
+                <span>Samantha</span>
+                <span>samantha@email.com</span>
+              </div>
+            </div>
+
+            <ul id="menu">
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Wallets</a></li>
+              <li><a href="#">Summary</a></li>
+              <li><a href="#">Accounts</a></li>
+              <li><a href="#">Settings</a></li>
+            </ul>
+          </nav>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </header>
+      </aside>
+
+      <main>
+        <section>
+          <div class="even-columns">
+            <div>
+              <div class="main-header">
+                <div class="main-left">
+                  <h2>Expanses</h2>
+                  <span datatype="01-25-2020">01 - 25 March, 2020</span>
                 </div>
 
-                <nav id="navbar">
+                <div class="profiles">
+                  <img
+                    src="https://i.pravatar.cc/50?img=10"
+                    alt=" profile image"
+                  />
+                  <img
+                    src="https://i.pravatar.cc/50?img=7"
+                    alt=" profile image"
+                  />
+                  <img
+                    src="https://i.pravatar.cc/50?img=37"
+                    alt=" profile image"
+                  />
 
-                    <ul id="menu" role="list">
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="#">Expenses</a></li>
-                        <li><a href="#">Wallets</a></li>
-                        <li><a href="#">Summary</a></li>
-                        <li><a href="#">Accounts</a></li>
-                        <li><a href="#">Settings</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </aside>
-        <main>
-            <section>
-                <div class="container">
-                    <div class="main-dashboard">
-                        <div>
-                            <header>
-                                <div class="expanses-content">
-                                    <div class="data-name">
-                                        <h2>Expanses</h2>
-                                        <span datetime="2023-05-19">01 - 25 March, 2023</span>
-                                    </div>
+                  <img src="assets/plus.svg" alt="button to add more users" />
+                </div>
+              </div>
+              <img src="assets/stats.svg" alt="status icon" />
+              <div class="list">
+                <div class="today-cards">
+                  <h3>Today</h3>
+                  <hr />
 
-                                    <div class="date-group">
-                                        <img src="img/profile-2.svg" alt="Profile Image">
-                                        <img src="img/profile-3.svg" alt="Profile Image">
-                                        <img src="img/profile-4.svg" alt="Profile Image">
-                                        <i class="ph ph-plus"></i>
-                                    </div>
-                                </div>
-                            </header>
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="assets/shopping.svg" alt="Shopping Icon" />
 
-                            <div class="stats">
-                                <img src="img/stats.svg" alt="Statistics Image">
-
-                                <div class="stats-info">
-                                    <div class="info-title">
-                                        <h3>Today</h3>
-                                    </div>
-                                    <hr>
-                                    <div class="info-container">
-                                        <div class="info_group">
-                                            <div>
-                                                <i class="ph ph-shopping-cart"></i>
-                                                <div class="info-text">
-                                                    <p>Grocery</p>
-                                                    <span>5:12 pm • Belanja di pasar</span>
-                                                </div>
-
-                                            </div>
-                                            <span>-326.800</span>
-                                        </div>
-
-                                        <div class="info_group">
-                                            <div>
-                                                <i class="ph ph-car"></i>
-                                                <div class="info-text">
-                                                    <p>Transportation</p>
-                                                    <span>5:12 pm  •  Naik bus umum</span>
-                                                </div>
-
-                                            </div>
-                                            <span>-15.000</span>
-                                        </div>
-
-                                        <div class="info_group">
-                                            <div>
-                                                <i class="ph ph-house"></i>
-                                                <div class="info-text">
-                                                    <p>Housing</p>
-                                                    <span>5:12 pm  •  Bayar Listrik</span>
-                                                </div>
-
-                                            </div>
-                                            <span>-185.750</span>
-                                        </div>
-
-                                        <div class="info-title">
-                                            <h3>Monday, 23 March 2020</h3>
-                                        </div>
-
-                                        <div class="info_group">
-                                            <div>
-                                                <i class="ph ph-cooking-pot"></i>
-                                                <div class="info-text">
-                                                    <p>Food and Drink</p>
-                                                    <span>5:12 pm  •  Naik bus umum</span>
-                                                </div>
-
-                                            </div>
-                                            <span>-156.000</span>
-                                        </div>
-
-
-                                        <div class="info_group">
-                                            <div>
-                                                <i class="ph ph-play"></i>
-                                                <div class="info-text">
-                                                    <p>Entertainment</p>
-                                                    <span>5:12 pm  •  Nonton Bioskop</span>
-                                                </div>
-
-                                            </div>
-                                            <span>-35.200</span>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
+                      <div class="card-info">
+                        <div class="card-info-name">
+                          <p>Grocery</p>
+                          <span>5:12 pm • Naik bus umum</span>
                         </div>
-                        <div>
-                            <h2>Where your money go?</h2>
-                            <div class="metric">
-                                <div class="metric-stats">
-                                    <div class="progress-info">
-                                        <p>Food and Drinks</p>
-                                        <span>872.400</span>
-                                    </div>
 
-                                    <div class="progress-bar">
-                                        <div class="progress"></div>
-                                    </div>
-                                </div>
-
-                                <div class="metric-stats">
-                                    <div class="progress-info">
-                                        <p>Shopping</p>
-                                        <span>1.378.200</span>
-                                    </div>
-
-                                    <div class="progress-bar">
-                                        <div class="progress"></div>
-                                    </div>
-                                </div>
-
-                                <div class="metric-stats">
-                                    <div class="progress-info">
-                                        <p>Housing</p>
-                                        <span>928.500</span>
-                                    </div>
-
-                                    <div class="progress-bar">
-                                        <div class="progress"></div>
-                                    </div>
-                                </div>
-
-                                <div class="metric-stats">
-                                    <div class="progress-info">
-                                        <p>Vehicle</p>
-                                        <span>520.000 </span>
-                                    </div>
-
-                                    <div class="progress-bar">
-                                        <div class="progress"></div>
-                                    </div>
-                                </div>
-
-                                <div class="metric-stats">
-                                    <div class="progress-info">
-                                        <p>Transportation</p>
-                                        <span>420.700</span>
-                                    </div>
-
-                                    <div class="progress-bar">
-                                        <div class="progress"></div>
-                                    </div>
-                                </div>
-
-
-                                <div class="card">
-                                    <div class="header-card"></div>
-                                    <img src="img/package.svg" alt="Plant Image">
-                                    <img src="img/plant.svg" alt="Package Image">
-                                </div>
-
-                                <div class="body-card">
-                                    <h3>Save more money</h3>
-                                    <p>eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-                                </div>
-
-                                <button type="button">VIEW TIPS</button>
-                            </div>
-                        </div>
+                        <span>-326.800</span>
+                      </div>
                     </div>
-                </div>
-            </section>
-        </main>
-    </div>
-</div>
+                  </div>
 
-<script src="./js/main.js"></script>
-</body>
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="assets/transportation.svg"
+                        alt="transportation Icon"
+                      />
+
+                      <div class="card-info">
+                        <div class="card-info-name">
+                          <p>Transportation</p>
+                          <span>5:12 pm • Naik bus umum</span>
+                        </div>
+
+                        <span>-15.000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="assets/housing.svg" alt="housing Icon" />
+
+                      <div class="card-info">
+                        <div class="card-info-name">
+                          <p>Housing</p>
+                          <span>5:12 pm • Bayar Listrik</span>
+                        </div>
+
+                        <span>-185.750 </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h3>Monday, 23 March 2020</h3>
+                  <hr />
+
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="assets/food.svg" alt="Food Icon" />
+
+                      <div class="card-info">
+                        <div class="card-info-name">
+                          <p>Food and Drink</p>
+                          <span>5:12 pm • Makan Steak</span>
+                        </div>
+
+                        <span>-156.000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-img">
+                      <img
+                        src="assets/entertainment.svg"
+                        alt="entertainment Icon"
+                      />
+
+                      <div class="card-info">
+                        <div class="card-info-name">
+                          <p>Entertainment</p>
+                          <span>5:12 pm • Nonton Bioskop</span>
+                        </div>
+
+                        <span>-35.200</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2>Where your money go?</h2>
+
+              <div class="container-progress-bar">
+                <div class="container-progress">
+                  <div class="info-bar">
+                    <h3>Food and Drinks</h3>
+                    <span>872.400</span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress-bar-inner" style="width: 35%"></div>
+                  </div>
+                </div>
+
+                <div class="container-progress">
+                  <div class="info-bar">
+                    <h3>Shopping</h3>
+                    <span>1.378.200</span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress-bar-inner" style="width: 80%"></div>
+                  </div>
+                </div>
+
+                <div class="container-progress">
+                  <div class="info-bar">
+                    <h3>Housing</h3>
+                    <span>928.500</span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress-bar-inner" style="width: 50%"></div>
+                  </div>
+                </div>
+
+                <div class="container-progress">
+                  <div class="info-bar">
+                    <h3>Transportations</h3>
+                    <span>420.700</span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress-bar-inner" style="width: 25%"></div>
+                  </div>
+                </div>
+
+                <div class="container-progress">
+                  <div class="info-bar">
+                    <h3>Vehicle</h3>
+                    <span>520.000</span>
+                  </div>
+
+                  <div class="progress-bar">
+                    <div class="progress-bar-inner" style="width: 40%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-message">
+                <div class="card-images">
+                  <img src="assets/box.svg" alt="Image box" />
+                  <img src="assets/plant.svg" alt="image plant" />
+
+                  <div class="card-info">
+                    <h3>Save more money</h3>
+                    <p>
+                      eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim.
+                    </p>
+
+                    <button type="button">VIEW TIPS</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

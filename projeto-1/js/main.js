@@ -1,8 +1,18 @@
-const btnMenu = document.getElementById("menu-mobile");
+const hamburger = document.querySelector('.hamburger')
+const navMenu = document.getElementById('menu')
 
-function toggleMenu() {
-    const menu = document.getElementById("menu");
-    menu.classList.toggle('active')
+hamburger.addEventListener('click', mobileMenu)
+
+function mobileMenu() {
+  hamburger.classList.toggle('active')
+  navMenu.classList.toggle('active')
 }
 
-btnMenu.addEventListener("click", toggleMenu)
+const navLink = document.querySelectorAll('a')
+
+navLink.forEach(n => n.addEventListener('click', closeMenu))
+
+function closeMenu() {
+  hamburger.classList.remove('active')
+  navMenu.classList.remove('active')
+}
